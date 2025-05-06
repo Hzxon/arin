@@ -122,7 +122,7 @@ const triggerConfetti = () => {
       particleCount: 2,
       angle: 60,
       spread: 55,
-      origin: { x: 0 },
+      origin: { x: 0, y: window.innerHeight > 900 ? 0.3 : 0.6 },
       // colors: colors,
     });
 
@@ -130,7 +130,7 @@ const triggerConfetti = () => {
       particleCount: 2,
       angle: 120,
       spread: 55,
-      origin: { x: 1 },
+      origin: { x: 1, y: window.innerHeight > 900 ? 0.3 : 0.6 },
       // colors: colors,
     });
 
