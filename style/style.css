@@ -638,43 +638,62 @@ button:active {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (min-device-width: 390px) and (max-device-width: 430px) and (min-device-height: 900px) and (max-device-height: 940px) {
   .container {
-    width: 90%;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .one {
+    font-size: 3.5rem;
+  }
+
+  .two {
+    font-size: 1rem;
+  }
+
+  .three {
+    font-size: 2.5rem;
   }
 
   .four .text-box {
     width: 90%;
   }
 
-  .text-box .fake-btn {
-    right: 5px;
-    bottom: -38px;
-  }
-
   .idea-5 span {
-    display: block;
+    font-size: 1.8rem;
   }
 
   .idea-6 span {
-    font-size: 10rem;
-  }
-
-  .six .hat {
-    width: 50px;
-    top: -20px;
+    font-size: 8rem;
   }
 
   .wish-hbd {
-    font-size: 2.2em;
+    font-size: 2em;
   }
 
   .wish h5 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .nine p {
-    font-size: 1.5rem;
-    font-weight: lighter;
+    font-size: 1.2rem;
+  }
+
+  .valentines {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .envelope {
+    width: 250px;
+    height: 170px;
+  }
+
+  .card {
+    width: 220px;
+    height: 150px;
+    top: 150px;
+    left: 20px;
   }
 }
