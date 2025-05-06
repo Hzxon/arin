@@ -62,7 +62,7 @@ const triggerConfetti = () => {
 
   const count = 300;
   const defaults = {
-    origin: { y: 0.3 },
+    origin: { y: window.innerHeight > 900 ? 0.3 : 0.6 },
   };
 
   function fire(particleRatio, opts) {
