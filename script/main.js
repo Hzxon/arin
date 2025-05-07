@@ -171,7 +171,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10
       },
-      "+=1.7"
+      "+=10.7"
     )
     .from(".one", 0.7, {
       opacity: 0,
