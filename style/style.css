@@ -291,14 +291,6 @@ button:active {
   cursor: pointer;
 }
 
-.envelope {
-  position: relative;
-  width: 260px;
-  height: 170px;
-  background-color: #f08080;
-  margin: 0 auto;
-}
-
 .envelope:before {
   background-color: #f08080; 
   content:"";
@@ -326,20 +318,22 @@ button:active {
   position: absolute;
   border:3px solid #003049;
   border-style: dotted;
-  width: 240px;
-  heighT: 140px;
-  left:12px;
-  top:12px;
+  width: 200px;
+  heighT: 130px;
+  left:8px;
+  top:8px;
 }
 
 .text {
   position: absolute;
   font-family: 'Brush Script MT', cursive;
   font-size: 28px;
+  width: 200px;
+  height: 120px;
   text-align: center;
   line-height:25px;
   top:19px;
-  left:85px;
+  left:9px;
   color: #003049;
 }
 
@@ -395,8 +389,6 @@ button:active {
     transform: scaleX(0.85);
   }
 }
-
-
 
 .container div.six {
   top: 10vh;
@@ -499,14 +491,15 @@ button:active {
 
 .six img {
   display: inline-block;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
+  border-radius: 8px;
 }
 
 .six .hat {
   position: absolute;
   width: 80px;
-  top: -35px;
+  top: -48px;
   left: 41.5%;
   /* transform: scale(0.1); */
 }
@@ -606,6 +599,10 @@ button:active {
 .nine p {
   font-size: 2rem;
   font-weight: lighter;
+}
+
+.last-smile {
+  margin: 100px;
 }
 
 #replay {
