@@ -10,7 +10,6 @@ $(document).ready(function () {
   });
 });
 
-
 const audio = document.getElementById("hbd-audio");
 
 window.addEventListener("DOMContentLoaded", function () {
@@ -27,7 +26,6 @@ window.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("click", enableAudio);
 });
 
-// Import the data to customize and insert them into page
 const fetchData = () => {
   fetch("customize.json")
     .then(data => data.json())
@@ -44,8 +42,6 @@ const fetchData = () => {
           }
         }
 
-        // Check if the iteration is over
-        // Run animation if so
         if ( dataArr.length === dataArr.indexOf(customData) + 1 ) {
           animationTimeline();
         } 
@@ -114,16 +110,12 @@ const triggerConfetti = () => {
 
   const end = Date.now() + 15 * 1000;
 
-// go Buckeyes!
-  // const colors = ["#bb0000", "#ffffff"];
-
   (function frame() {
     confetti({
       particleCount: 2,
       angle: 60,
       spread: 55,
       origin: { x: 0, y: window.innerHeight > 900 ? 0.3 : 0.6 },
-      // colors: colors,
     });
 
     confetti({
@@ -131,7 +123,6 @@ const triggerConfetti = () => {
       angle: 120,
       spread: 55,
       origin: { x: 1, y: window.innerHeight > 900 ? 0.3 : 0.6 },
-      // colors: colors,
     });
 
     if (Date.now() < end) {
@@ -140,10 +131,8 @@ const triggerConfetti = () => {
   })();
 };
 
-// Animation Timeline
 const animationTimeline = () => {
   
-  // Spit chars that needs to be animated individually
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
 
@@ -423,7 +412,6 @@ const animationTimeline = () => {
     .to(".valentines", 0.5, {opacity: 1, visibility: "visible"});
 };
 
-// Run fetch and animation in sequence
 fetchData();
 
 if (tl == 0) audio.muted = true;
