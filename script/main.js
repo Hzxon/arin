@@ -166,12 +166,12 @@ const animationTimeline = () => {
     })
     .to(
       ".zero",
-      0.7,
+      1.8,
       {
         opacity: 0,
         y: 10
       },
-      "+=10.7"
+      "+=1.7"
     )
     .from(".one", 0.7, {
       opacity: 0,
